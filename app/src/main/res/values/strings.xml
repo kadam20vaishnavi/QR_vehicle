@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">QR_vehicle</string>
+    <string-array name="vehicle">
+        <item>2 Wheeler</item>
+        <item>3 Wheeler</item>
+        <item>4 Wheeler</item>
+    </string-array>
+
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
+</resources>
