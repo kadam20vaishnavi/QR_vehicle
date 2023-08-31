@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:padding="1dp"
+        android:fontFamily="@font/bonanova_regular"
+        android:text="How It Works"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="• To Register "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/reg_tab"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="> Click On Register Tab "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="> Enter All necessary details like name , mobile , email and vehicle number."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="> Select Document Expiration Date like licence,Registration,Insurance and PUC Expiry date(Optional)"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="> Upload Document like Driving licence , Vehicle Registration,Vehicle Insurance,Vehicle image and PUC document image.(Optional)"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="> Click On Register Button "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="> Got Register Now "
+            android:textColor="#850000"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="• To Login "
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="( To get Register Details )"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/logintab"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6sp"
+        android:justificationMode="inter_word"
+        android:fontFamily="@font/bonanova_regular"
+        android:text="> Click On Login Tab "
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="> Enter Mobile and Vehicle number then Login"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="• To Scan QR Code "
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/scancodetab"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="> Click On Scan QR Code Tab "
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="> Scan the existing QR Code"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6sp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="> Get Vehicle Data."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6sp"
+        android:justificationMode="inter_word"
+        android:fontFamily="@font/bonanova_regular"
+        android:text="Note : "
+        android:textStyle="bold"
+        android:textColor="#870000"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:justificationMode="inter_word"
+        android:fontFamily="@font/bonanova_regular"
+        android:text="• Only Owner can view registered data of vehicle after scanning QR code."
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="• If You are not owner then only Owner name, mobile and Vehicle number will get display."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:justificationMode="inter_word"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="• Dashboard "
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/dashboard"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6sp"
+        android:justificationMode="inter_word"
+        android:fontFamily="@font/bonanova_regular"
+        android:text="> After Login, Your Dashboard Will show 2 tabs 'View Details' and 'Get QR Code'."
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6sp"
+        android:justificationMode="inter_word"
+        android:fontFamily="@font/bonanova_regular"
+        android:text="• Click 'View Details' To edit and get details like name ,mobile ,expiry date and document copy like PUC ,Insurance ,Registration etc.."
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6sp"
+        android:justificationMode="inter_word"
+        android:fontFamily="@font/bonanova_regular"
+        android:text="•  To Download QR Code Go to 'QR Code tab'.(QR code will get download in gallary)"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+       </LinearLayout>
+
+</ScrollView>

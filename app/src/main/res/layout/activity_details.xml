@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    tools:context=".Details_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bonanova_regular"
+            android:text="All Details :"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name : "
+            android:textSize="19dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bonanova_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="7dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="1"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email : "
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bonanova_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address : "
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bonanova_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/user_addres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile : "
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bonanova_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/user_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Type : "
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/bonanova_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/vehicaltypeinst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+<!--        <Spinner-->
+<!--            android:id="@+id/vehispinnere"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:entries="@array/vehicle" />-->
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Number : "
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/bonanova_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/vehicalnumberdet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Documents:"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/bonanova_regular"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Licence expiry date : "
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/bonanova_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/licenceexpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 "
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/editborder"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Licence Copy : "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+            <ImageButton
+                android:id="@+id/sellicen"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignEnd="@+id/select_doc1"
+                android:src="@drawable/upload" />
+
+        <ImageView
+            android:id="@+id/licenceimage"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:text="1 "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Expiry Date : "
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/bonanova_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/registerexpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 "
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/editborder"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Copy"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageButton
+            android:id="@+id/selregi"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@+id/select_doc1"
+            android:src="@drawable/upload" />
+
+        <ImageView
+            android:id="@+id/registercopy"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:text="1 "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insurance Expiry Date : "
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/bonanova_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/insuranceexpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 "
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/editborder"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insurance Copy"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageButton
+            android:id="@+id/selinsu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@+id/select_doc1"
+            android:src="@drawable/upload" />
+
+        <ImageView
+            android:id="@+id/insurancecopy"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:text="1 "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PUC Expiry Date : "
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/bonanova_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/pucexpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 "
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/editborder"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PUC Copy"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageButton
+            android:id="@+id/selpuc"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@+id/select_doc1"
+            android:src="@drawable/upload" />
+
+        <ImageView
+            android:id="@+id/puccopy"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:text="1 "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/editborder"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehical Image"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageButton
+            android:id="@+id/selvehi"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignEnd="@+id/select_doc1"
+            android:src="@drawable/upload" />
+
+        <ImageView
+            android:id="@+id/vehicalcopy"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:text="1 "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/update"
+            android:layout_marginBottom="20dp"
+            android:text="Update Submit"/>
+
+    </LinearLayout>
+</ScrollView>

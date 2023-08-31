@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,6 +23,8 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText mobile,vehicleno;
     Button submit;
+    SharedPreferences sharedpreferences;
+    int autosave;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         submit=findViewById(R.id.btnlogin);
         vehicleno=findViewById(R.id.lvehical);
 
+        getSupportActionBar().setTitle((Html.fromHtml("<font color=\"#ffffff\">" + "Login" + "</font>")));
         Intent intent = getIntent();    //print current registered user mobile to editext
         String Reg_mob = intent.getStringExtra("reg_mob");
         String vehicle_no = intent.getStringExtra("veh_num");
@@ -78,6 +83,7 @@ class UserLoginTask extends AsyncTask<String, Void, String> {
     String mobile, veh_num, res,passResponse;
     Button btnlogin;
 
+    SharedPreferences sharedpreferences;
     private static int LOGIN_TIME_OUT = 1500;
 
     public UserLoginTask(Context mctx, Button btnlogin) {
@@ -89,6 +95,8 @@ class UserLoginTask extends AsyncTask<String, Void, String> {
     protected String doInBackground(String... data) {
         mobile = data[0];
         veh_num = data[1];
+
+        sharedpreferences = mctx.getSharedPreferences("autoLogin", Context.MODE_PRIVATE);
 
         Api_list Ar = Api.getClient().create(Api_list.class);
         Call<Registration_pojo> call = Ar.login(mobile,veh_num);
@@ -105,7 +113,13 @@ class UserLoginTask extends AsyncTask<String, Void, String> {
 
                 if (res.equals("User Login Successfully")) {
 
-                    Intent i = new Intent(mctx, Home_Page_Activity.class);
+                    SharedPreferences.Editor editor = sharedpreferences.edit();
+                    editor.putString("mobile_number", mobile);
+                    editor.putString("vehicle_number", veh_num);
+                    editor.putInt("key", 1);
+                    editor.apply();
+
+                    Intent i = new Intent(mctx, Dashboard_Activity.class);
                     i.putExtra("mobile",mobile);
                     i.putExtra("veh_num",veh_num);
                     mctx.startActivity(i);

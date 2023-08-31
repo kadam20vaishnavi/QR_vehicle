@@ -5,9 +5,15 @@ import com.google.gson.annotations.SerializedName;
 
 public class DetailModal {
 
+    @SerializedName("id")
+    @Expose
+    private  String id;
     @SerializedName("name")
     @Expose
     private String name;
+    @SerializedName("price")
+    @Expose
+    private String price;
     @SerializedName("mobile")
     @Expose
     private String mobile;
@@ -56,6 +62,26 @@ public class DetailModal {
     @SerializedName("response")
     @Expose
     private String response;
+
+    @SerializedName("payment_status")
+    @Expose
+    private String paymentstatus;
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -191,5 +217,13 @@ public class DetailModal {
 
     public void setResponse(String response) {
         this.response = response;
+    }
+
+    public String getPaymentstatus() {
+        return paymentstatus;
+    }
+
+    public void setPaymentstatus(String paymentstatus) {
+        this.paymentstatus = paymentstatus;
     }
 }
